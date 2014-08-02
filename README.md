@@ -56,7 +56,7 @@ Example HTML:
 	    <li ng-repeat="crumbs in breadcrumbs">
 	        <ng-switch on="$last">
 	            <span ng-switch-when="true">{{crumbs.title}}</span>
-	            <span ng-switch-default><a href="{{crumbs.path}}">{{crumb.title}}</a></span>
+	            <span ng-switch-default><a href="{{crumbs.path}}">{{crumbs.title}}</a></span>
 	        </ng-switch>
 	    </li>
 	</ul>
