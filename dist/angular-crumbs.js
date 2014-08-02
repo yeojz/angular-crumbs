@@ -4,15 +4,6 @@
  *	Copyright (c) 2014 Gerald Yeo http://fusedthought.com  
  *	License: MIT   
  */
-/*
- *  Angular Breadcrumb Factory
- *  
- *  This breadcrumb factory uses $location parameter to generate a breadcrumb trail.
- *  Does not use ui.router unlike other breadcrumb plugins
- *
- *  You can choose to ignore variable items for example :id in your routes when
- *  generating a trail
- */
 'use strict';
 angular.module('angularCrumbs', []).factory('BreadcrumbsFactory', [
   '$rootScope',

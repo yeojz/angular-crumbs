@@ -90,6 +90,7 @@ configOptions.clean = {
 configOptions.concat = {
   dist: {
     options: {
+      stripBanners: true,
       banner: '<%= angularcrumbs.banner %>'
     },
     src: ['<%= angularcrumbs.src %>/**/*.js'],
@@ -104,6 +105,8 @@ configOptions.concat = {
 configOptions.uglify = {
   dist: {
     options: {
+      sourceMap: '<%= angularcrumbs.dist %>/<%= angularcrumbs.pkg.name %>.min.map',
+      sourceMappingURL: '<%= angularcrumbs.pkg.name %>.min.map',
       banner: '<%= angularcrumbs.banner %>'
     },
     src: '<%= angularcrumbs.dist %>/<%= angularcrumbs.pkg.name %>.js',
