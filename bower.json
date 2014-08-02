@@ -1,0 +1,22 @@
+{
+  "name": "angular-crumbs",
+  "version": "1.0.0", 
+  "description": "AngularJS factory which generates a breadcrumb trail for your current route.",  
+  "main": "dist/angular-crumbs.js",
+  "ignore": [
+    "src",
+    "test",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintrc",
+    "gruntfile.js",
+    "bower.json",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "angular": ">=1.0.8",
+  },
+  "devDependencies": {
+  }
+}

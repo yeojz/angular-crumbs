@@ -1,0 +1,37 @@
+{
+  "name": "angular-crumbs",
+  "version": "1.0.0",
+  "description": "AngularJS factory which generates a breadcrumb trail for your current route.",  
+  "homepage": "https://github.com/yeojz/angular-crumbs",  
+  "author": { 
+    "name" : "Gerald Yeo",
+    "email" : "contact@fusedthought.com",
+    "url" : "http://fusedthought.com.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yeojz/angular-crumbs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yeojz/angular-crumbs/issues"
+  },
+  "license" : "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "0.4.x",
+    "grunt-contrib-clean": "0.5.x",
+    "grunt-contrib-concat": "0.3.x",
+    "grunt-contrib-jshint": "0.7.x",
+    "grunt-contrib-uglify": "0.2.x",
+    "grunt-ngmin": "0.0.x",
+    "jshint-stylish": "0.1.x",
+    "load-grunt-tasks": "0.2.x",
+    "requirejs": "2.1.x",
+    "time-grunt": "0.2.x"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+  }
+}
