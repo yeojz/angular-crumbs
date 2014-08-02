@@ -64,9 +64,7 @@ function($rootScope, $location, $routeParams){
 
 
   // Generate the path to current view breadcrumbs
-  function getBreadcrumbPath(index){
-    var path = $location.path().split('/');
-
+  function getBreadcrumbPath(path, index){
     return '/' + (path.slice(0, index + 1)).join('/');
   }
 
@@ -95,7 +93,7 @@ function($rootScope, $location, $routeParams){
     if (_settings.showRoot){
       result.push({
         title: _settings.rootName,
-        path: path[0]
+        path: _settings.rootPath
       })
     }
 
@@ -111,7 +109,7 @@ function($rootScope, $location, $routeParams){
       if (ignoreCrumbs.indexOf(path[i]) < 0){
         result.push({
           title: path[i], 
-          path: getBreadcrumbPath(i)
+          path: getBreadcrumbPath(path, i)
         });  
       }
     }
