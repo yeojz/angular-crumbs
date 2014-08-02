@@ -6,10 +6,11 @@
   "ignore": [
     "src",
     "test",
+    "examples",
     ".bowerrc",
     ".gitignore",
     ".jshintrc",
-    "gruntfile.js",
+    "Gruntfile.js",
     "bower.json",
     "package.json",
     "README.md"

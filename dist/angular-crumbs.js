@@ -1,7 +1,7 @@
 /**   
  *	angular-crumbs  
  *	Version 1.0.0  
- *	Copyright (c) 2014 Gerald Yeo http://fusedthought.com.com/  
+ *	Copyright (c) 2014 Gerald Yeo http://fusedthought.com  
  *	License: MIT   
  */
 /*
@@ -62,9 +62,9 @@ angular.module('angularCrumbs', []).factory('BreadcrumbsFactory', [
         ignoreCrumbs = getIgnoreCrumbs();
       }
       // Show the root
-      if (_setting.showRoot) {
+      if (_settings.showRoot) {
         result.push({
-          title: _setting.rootName,
+          title: _settings.rootName,
           path: path[0]
         });
       }

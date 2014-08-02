@@ -1,0 +1,33 @@
+
+
+.crumbs ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.crumbs li {
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+  display: inline-block;
+}
+
+.crumbs li :after {
+  margin: 0 1rem;
+  content: ">";
+  display: inline-block;
+}
+    
+.crumbs li :last-child{
+  font-weight: bold;
+}
+
+.crumbs li :last-child:after {
+  display: none;
+}      
+
+
+.crumbs a {
+  text-decoration: none;
+  color: @qd-color-primary;
+}

@@ -92,9 +92,9 @@ function($rootScope, $location, $routeParams){
     }
         
     // Show the root
-    if (_setting.showRoot){
+    if (_settings.showRoot){
       result.push({
-        title: _setting.rootName,
+        title: _settings.rootName,
         path: path[0]
       })
     }
