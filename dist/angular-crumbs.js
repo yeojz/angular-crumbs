@@ -19,7 +19,8 @@ angular.module('angularCrumbs', []).factory('BreadcrumbsFactory', [
         variables: true,
         showRoot: true,
         rootName: 'Home',
-        rootPath: '/'
+        rootPath: '/',
+        blacklistURLs: []
       };
     //
     // Methods
@@ -64,10 +65,23 @@ angular.module('angularCrumbs', []).factory('BreadcrumbsFactory', [
       // For the remainder
       // Loop through
       for (var i = 0; i < path.length; i++) {
-        if (ignoreCrumbs.indexOf(path[i]) < 0) {
+        // Get the URL Path segment
+        var segment = getBreadcrumbPath(path, i),
+          // Final check if skipping current iteration
+          skip = false;
+        // Check if current segment is in blacklist of segements
+        if (_settings.blacklistURLs.indexOf(segment) >= 0) {
+          skip = true;
+        }
+        // Check if it's in the ignore Crumbs list
+        if (ignoreCrumbs.indexOf(path[i]) >= 0) {
+          skip = true;
+        }
+        // To add or not to add?
+        if (!skip) {
           result.push({
             title: path[i],
-            path: getBreadcrumbPath(path, i)
+            path: segment
           });
         }
       }
